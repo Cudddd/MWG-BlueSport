@@ -1,7 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
 using MWG_BlueSport.ModelDTO;
 using MWG_BlueSport.Models;
 using MWG_BlueSport.Service.Client;
+using Newtonsoft.Json.Linq;
 using RestSharp;
 
 namespace MWG_BlueSport.Service.Product
@@ -33,6 +35,26 @@ namespace MWG_BlueSport.Service.Product
             }
 
             return productModels;
+        }
+
+        public ProductModel Get(string id)
+        {
+            var response = _clientService.Get(_apiName + "/" + id);
+
+            var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<ProductDTO>(response.Content);
+
+  
+            return dataDto.ToProductModel();
+        }
+
+        public ProductModel GetBySlug(string slug)
+        {
+            var response = _clientService.Get(_apiName + "/" + slug);
+
+            var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<ProductDTO>(response.Content);
+
+  
+            return dataDto.ToProductModel();
         }
     }
 }

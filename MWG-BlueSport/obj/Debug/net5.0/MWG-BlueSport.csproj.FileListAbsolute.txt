@@ -42,4 +42,5 @@
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Debug/net5.0/Razor/Views/Home/_PartialBanner.cshtml.g.cs
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/bin/Debug/net5.0/Newtonsoft.Json.dll
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/bin/Debug/net5.0/RestSharp.dll
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Debug/net5.0/Razor/Views/Product/Detail.cshtml.g.cs
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Debug/net5.0/Razor/Views/Home/_PartialProduct.cshtml.g.cs

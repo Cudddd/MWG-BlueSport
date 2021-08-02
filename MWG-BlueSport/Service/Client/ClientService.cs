@@ -16,11 +16,12 @@ namespace MWG_BlueSport.Service.Client
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json")
                 .Build();
+            
             var url = configuration.GetSection("BaseUrl").Value;
-            var basepath = configuration.GetSection("BasePath").Value;
+            var basePath = configuration.GetSection("BasePath").Value;
 
             _url = url;
-            _basePath = basepath;
+            _basePath = basePath;
         }
         public IRestResponse Get(string path)
         {
