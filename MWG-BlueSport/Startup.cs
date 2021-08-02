@@ -9,6 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MWG_BlueSport.Service.Banner;
+using MWG_BlueSport.Service.Client;
 using MWG_BlueSport.Service.Product;
 using MWG_BlueSport.Service.Store;
 
@@ -30,6 +31,7 @@ namespace MWG_BlueSport
             services.AddTransient<IBannerService,BannerService>();
             services.AddTransient<IStoreService,StoreService>();
             services.AddTransient<IProductService,ProductService>();
+            services.AddSingleton<IClientService,ClientService>();
             
             services.AddControllersWithViews();
         }
