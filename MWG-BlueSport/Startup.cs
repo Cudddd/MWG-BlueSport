@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MWG_BlueSport.Models;
 using MWG_BlueSport.Service.Banner;
+using MWG_BlueSport.Service.Category;
 using MWG_BlueSport.Service.Client;
 using MWG_BlueSport.Service.Product;
 using MWG_BlueSport.Service.Store;
@@ -32,6 +34,7 @@ namespace MWG_BlueSport
             services.AddTransient<IStoreService,StoreService>();
             services.AddTransient<IProductService,ProductService>();
             services.AddSingleton<IClientService,ClientService>();
+            services.AddSingleton<ICategoryService,CategoryService>();
             
             services.AddControllersWithViews();
         }
