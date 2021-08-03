@@ -32,5 +32,13 @@ namespace MWG_BlueSport.Service.Store
 
             return storeModels;
         }
+
+        public StoreModel GetBySlug(string slug)
+        {
+            var response = _clientService.Get(_apiName + "/" + slug);
+            var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<StoreDTO>(response.Content);
+
+            return dataDto.ToStoreModel();
+        }
     }
 }

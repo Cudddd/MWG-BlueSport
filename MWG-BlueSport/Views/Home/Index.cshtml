@@ -37,8 +37,33 @@
         <li><a href="#">DỤNG CỤ</a></li>
       </ul>
       
-      @Html.Partial("_PartialProduct",Model.productModels);
-      
+      <div class="listproduct listproduct-block owl-carousel">
+        @{
+          foreach (var item in @Model.productModels)
+          {
+            <div class="item">
+              <a href="#">
+                <div class="item-wrap">
+                  <div class="item-label">
+                    <span class="lb-percent">@item.saleOff</span>
+                    <span class="lb-tragop">Góp 0%</span>
+                  </div>
+                  <div class="item-img">
+                    <img src="~/@item.image" alt="ADIDAS Adizero Takumi Sen 7 Tokyo">
+                  </div>
+                </div>
+                <h3><span>@item.brandName</span>  @item.name </h3>
+                <div class="price">
+                  <p class="price-current">@item.priceCurrent</p>
+                  <p class="price-old">@item.priceOld</p>
+                </div>
+              </a>
+            </div>
+          }
+        }
+                    
+      </div>
+
       <a href="#" class="c-btn c-btn-white">
         <span>XEM TẤT CẢ GIÀY DÉP NAM</span>
       </a>
@@ -57,8 +82,33 @@
         <li><a href="#">DỤNG CỤ</a></li>
       </ul>
       
-      @Html.Partial("_PartialProduct",Model.productModels);
-      
+      <div class="listproduct listproduct-block owl-carousel">
+        @{
+          foreach (var item in @Model.productModels)
+          {
+            <div class="item">
+              <a href="#">
+                <div class="item-wrap">
+                  <div class="item-label">
+                    <span class="lb-percent">@item.saleOff</span>
+                    <span class="lb-tragop">Góp 0%</span>
+                  </div>
+                  <div class="item-img">
+                    <img src="~/@item.image" alt="ADIDAS Adizero Takumi Sen 7 Tokyo">
+                  </div>
+                </div>
+                <h3><span>@item.brandName</span>  @item.name </h3>
+                <div class="price">
+                  <p class="price-current">@item.priceCurrent</p>
+                  <p class="price-old">@item.priceOld</p>
+                </div>
+              </a>
+            </div>
+          }
+        }
+                    
+      </div>
+
       <a href="#" class="c-btn c-btn-white">
         <span>XEM TẤT CẢ ÁO - QUẦN NỮ</span>
       </a>
@@ -77,8 +127,33 @@
         <li><a href="#">DỤNG CỤ</a></li>
       </ul>
       
-      @Html.Partial("_PartialProduct",Model.productModels);
-      
+      <div class="listproduct listproduct-block owl-carousel">
+        @{
+          foreach (var item in @Model.productModels)
+          {
+            <div class="item">
+              <a href="#">
+                <div class="item-wrap">
+                  <div class="item-label">
+                    <span class="lb-percent">@item.saleOff</span>
+                    <span class="lb-tragop">Góp 0%</span>
+                  </div>
+                  <div class="item-img">
+                    <img src="~/@item.image" alt="ADIDAS Adizero Takumi Sen 7 Tokyo">
+                  </div>
+                </div>
+                <h3><span>@item.brandName</span>  @item.name </h3>
+                <div class="price">
+                  <p class="price-current">@item.priceCurrent</p>
+                  <p class="price-old">@item.priceOld</p>
+                </div>
+              </a>
+            </div>
+          }
+        }
+                    
+      </div>
+
       <a href="#" class="c-btn c-btn-white">
         <span>XEM TẤT CẢ GIÀY DÉP TRẺ EM</span>
       </a>
@@ -97,8 +172,32 @@
         <li><a href="#">DỤNG CỤ</a></li>
       </ul>
       
-      @Html.Partial("_PartialProduct",Model.productModels);
-      
+      <div class="listproduct listproduct-block owl-carousel">
+        @{
+          foreach (var item in @Model.productModels)
+          {
+            <div class="item">
+              <a href="#">
+                <div class="item-wrap">
+                  <div class="item-label">
+                    <span class="lb-percent">@item.saleOff</span>
+                    <span class="lb-tragop">Góp 0%</span>
+                  </div>
+                  <div class="item-img">
+                    <img src="~/@item.image" alt="ADIDAS Adizero Takumi Sen 7 Tokyo">
+                  </div>
+                </div>
+                <h3><span>@item.brandName</span>  @item.name </h3>
+                <div class="price">
+                  <p class="price-current">@item.priceCurrent</p>
+                  <p class="price-old">@item.priceOld</p>
+                </div>
+              </a>
+            </div>
+          }
+        }
+              
+      </div>
       <a href="#" class="c-btn c-btn-white">
         <span>XEM TẤT CẢ XE ĐẠP NỔI BẬT</span>
       </a>
@@ -117,8 +216,32 @@
         <li><a href="#">DỤNG CỤ</a></li>
       </ul>
       
-      @Html.Partial("_PartialProduct",Model.productModels);
-      
+      <div class="listproduct listproduct-block owl-carousel">
+        @{
+          foreach (var item in @Model.productModels)
+          {
+            <div class="item">
+              <a href="#">
+                <div class="item-wrap">
+                  <div class="item-label">
+                    <span class="lb-percent">@item.saleOff</span>
+                    <span class="lb-tragop">Góp 0%</span>
+                  </div>
+                  <div class="item-img">
+                    <img src="~/@item.image" alt="ADIDAS Adizero Takumi Sen 7 Tokyo">
+                  </div>
+                </div>
+                <h3><span>@item.brandName</span>  @item.name </h3>
+                <div class="price">
+                  <p class="price-current">@item.priceCurrent</p>
+                  <p class="price-old">@item.priceOld</p>
+                </div>
+              </a>
+            </div>
+          }
+        }
+      </div>
+
       <a href="#" class="c-btn c-btn-white">
         <span>XEM TẤT CẢ CÁC CHẠY BỘ</span>
       </a>
@@ -126,68 +249,66 @@
     <!-- / Các môn thể thao -->
   </section>
 
-  <div class="trademark">
-    <section>
-      <h2 class="trademark__ttl">XEM SẢN PHẨM CÁC THƯƠNG HIỆU NỔI TIẾNG</h2>
-      <div class="trademark__list owl-carousel">
-        <div class="item"><img src="./images/img_thuonghieu01.png" alt="thuong hieu" width="102" height="68"></div>
-        <div class="item"><img src="./images/img_thuonghieu02.png" alt="thuong hieu" width="99" height="56"></div>
-        <div class="item"><img src="./images/img_thuonghieu03.png" alt="thuong hieu" width="105" height="63"></div>
-        <div class="item"><img src="./images/img_thuonghieu04.png" alt="thuong hieu" width="137" height="50"></div>
-        <div class="item"><img src="./images/img_thuonghieu05.png" alt="thuong hieu" width="108" height="54"></div>
-        <div class="item"><img src="./images/img_thuonghieu06.png" alt="thuong hieu" width="128" height="35"></div>
-        <div class="item"><img src="./images/img_thuonghieu01.png" alt="thuong hieu" width="102" height="68"></div>
-        <div class="item"><img src="./images/img_thuonghieu02.png" alt="thuong hieu" width="99" height="56"></div>
-        <div class="item"><img src="./images/img_thuonghieu03.png" alt="thuong hieu" width="105" height="63"></div>
-        <div class="item"><img src="./images/img_thuonghieu04.png" alt="thuong hieu" width="137" height="50"></div>
-        <div class="item"><img src="./images/img_thuonghieu05.png" alt="thuong hieu" width="108" height="54"></div>
-        <div class="item"><img src="./images/img_thuonghieu06.png" alt="thuong hieu" width="128" height="35"></div>
+<div class="trademark">
+  <section>
+    <h2 class="trademark__ttl">XEM SẢN PHẨM CÁC THƯƠNG HIỆU NỔI TIẾNG</h2>
+    <div class="trademark__list owl-carousel">
+      <div class="item"><img src="./images/img_thuonghieu01.png" alt="thuong hieu" width="102" height="68"></div>
+      <div class="item"><img src="./images/img_thuonghieu02.png" alt="thuong hieu" width="99" height="56"></div>
+      <div class="item"><img src="./images/img_thuonghieu03.png" alt="thuong hieu" width="105" height="63"></div>
+      <div class="item"><img src="./images/img_thuonghieu04.png" alt="thuong hieu" width="137" height="50"></div>
+      <div class="item"><img src="./images/img_thuonghieu05.png" alt="thuong hieu" width="108" height="54"></div>
+      <div class="item"><img src="./images/img_thuonghieu06.png" alt="thuong hieu" width="128" height="35"></div>
+      <div class="item"><img src="./images/img_thuonghieu01.png" alt="thuong hieu" width="102" height="68"></div>
+      <div class="item"><img src="./images/img_thuonghieu02.png" alt="thuong hieu" width="99" height="56"></div>
+      <div class="item"><img src="./images/img_thuonghieu03.png" alt="thuong hieu" width="105" height="63"></div>
+      <div class="item"><img src="./images/img_thuonghieu04.png" alt="thuong hieu" width="137" height="50"></div>
+      <div class="item"><img src="./images/img_thuonghieu05.png" alt="thuong hieu" width="108" height="54"></div>
+      <div class="item"><img src="./images/img_thuonghieu06.png" alt="thuong hieu" width="128" height="35"></div>
+    </div>
+    <div class="visit">
+      <div class="trademark-post owl-carousel">
+        <a href="#" class="post-item">
+          <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
+          <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
+        </a>
+        <a href="#" class="post-item">
+          <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
+          <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
+        </a>
+        <a href="#" class="post-item">
+          <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
+          <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
+        </a>
       </div>
-      <div class="visit">
-        <div class="trademark-post owl-carousel">
-          <a href="#" class="post-item">
-            <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
-            <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
-          </a>
-          <a href="#" class="post-item">
-            <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
-            <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
-          </a>
-          <a href="#" class="post-item">
-            <img src="./images/img_trademark.jpeg" alt="Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình">
-            <p>Không gian trẻ trung, hiện đại tư vấn chuyên nghiệp, tận tình</p>
-          </a>
+      <div class="visit-main">
+        <h2 class="visit-main-ttl">GHÉ THĂM BLUESPORT</h2>
+        <p class="txt">Hiện mở bán 4 siêu thị tại TP. Hồ Chí Minh</p>
+        <div class="visit-checkbox">
+          <span></span>
+          <p>Tìm siêu thị gần bạn</p>
         </div>
-        <div class="visit-main">
-          <h2 class="visit-main-ttl">GHÉ THĂM BLUESPORT</h2>
-          <p class="txt">Hiện mở bán 4 siêu thị tại TP. Hồ Chí Minh</p>
-          <div class="visit-checkbox">
-            <span></span>
-            <p>Tìm siêu thị gần bạn</p>
-          </div>
-          <div class="visit__list">
-            @{
-              foreach (var item in Model.storeModels)
-              {
-                <a href="#" class="item">
-                  <p class="txt-name">@item.name</p>
-                  <div class="txt-address">
-                    <p>@item.address</p>
-                    <span><i class="icon-visitmap"></i></span>
-                  </div>
-                </a>
-              }
+        <div class="visit__list">
+          @{
+            foreach (var item in Model.storeModels)
+            {
+              <a asp-action="Detail" asp-controller="Store" asp-route-slug="@item.slug" class="item">
+                <p class="txt-name">@item.name</p>
+                <div class="txt-address">
+                  <p>@item.address</p>
+                  <span><i class="icon-visitmap"></i></span>
+                </div>
+              </a>
             }
-            
-            
-          </div>
-          <a href="javascript:void(0)" class="visit-btn">
-            <span>XEM THÊM 9 SIÊU THỊ</span>
-          </a>
+          }
         </div>
+        <a href="javascript:void(0)" class="visit-btn">
+          <span>XEM THÊM 9 SIÊU THỊ</span>
+        </a>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
+</div>
 
 
 
