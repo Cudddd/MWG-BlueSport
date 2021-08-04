@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using MWG_BlueSport.ModelDTO;
 using MWG_BlueSport.Models;
@@ -20,11 +21,11 @@ namespace MWG_BlueSport.Service.Banner
 
             _apiName = "banner";
         }
-        public List<BannerModel> GetAll()
+        public async Task<List<BannerModel>> GetAll()
         {
             #region Get Data DTO => API
 
-            var response = _clientService.Get(_apiName);
+            var response = await _clientService.Get(_apiName);
 
             var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<List<BannerDTO>>(response.Content);
             #endregion

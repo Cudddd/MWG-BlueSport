@@ -14,9 +14,9 @@
 	<link rel="stylesheet" type="text/css" href="~/css/home.css">
 </head>
 <body>
-  <div class="bgcover"></div>
-	<!-- Header -->
-@Html.Partial("Common/_PartialHeader", Model._categories);
+<div class="bgcover"></div>
+<!-- Header -->
+@await Component.InvokeAsync("Header");
 
 @RenderBody();
     

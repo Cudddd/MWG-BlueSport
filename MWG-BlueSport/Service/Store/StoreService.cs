@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using MWG_BlueSport.ModelDTO;
 using MWG_BlueSport.Models;
 using MWG_BlueSport.Service.Client;
@@ -17,10 +18,10 @@ namespace MWG_BlueSport.Service.Store
 
             _apiName = "store";
         }
-        public List<StoreModel> GetAll()
+        public async Task<List<StoreModel>> GetAll()
         {
             #region Get Data DTO => API
-            var response = _clientService.Get(_apiName);
+            var response = await _clientService.Get(_apiName);
             var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<List<StoreDTO>>(response.Content);
             #endregion
 
@@ -33,9 +34,9 @@ namespace MWG_BlueSport.Service.Store
             return storeModels;
         }
 
-        public StoreModel GetBySlug(string slug)
+        public async Task<StoreModel> GetBySlug(string slug)
         {
-            var response = _clientService.Get(_apiName + "/" + slug);
+            var response = await _clientService.Get(_apiName + "/" + slug);
             var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<StoreDTO>(response.Content);
 
             return dataDto.ToStoreModel();

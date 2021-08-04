@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 using RestSharp;
 
@@ -23,12 +24,12 @@ namespace MWG_BlueSport.Service.Client
             _url = url;
             _basePath = basePath;
         }
-        public IRestResponse Get(string path)
+        public async Task<IRestResponse> Get(string path)
         {
             var client = new RestClient(_url + _basePath + path);
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
-            IRestResponse response = client.Execute(request);
+            var response = await client.ExecuteAsync(request);
 
             return response;
         }

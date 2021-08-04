@@ -43,3 +43,5 @@
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/ref/MWG-BlueSport.dll
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/MWG-BlueSport.pdb
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/MWG-BlueSport.genruntimeconfig.cache
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Product/Detail.cshtml.g.cs
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Store/Detail.cshtml.g.cs

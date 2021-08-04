@@ -19,7 +19,6 @@ namespace MWG_BlueSport.Controllers
         private readonly IBannerService _bannerService;
         private readonly IStoreService _storeService;
         private readonly IProductService _productService;
-        private readonly ICategoryService _categoryService;
 
         public HomeController(ILogger<HomeController> logger, IBannerService bannerService,
             IStoreService storeService, IProductService productService,
@@ -29,21 +28,18 @@ namespace MWG_BlueSport.Controllers
             _bannerService = bannerService;
             _storeService = storeService;
             _productService = productService;
-            _categoryService = categoryService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
             HomeViewModel homeViewModel = new HomeViewModel();
-            var bannerModels = _bannerService.GetAll();
-            homeViewModel.bannerModels = bannerModels;
+  
+            homeViewModel.bannerModels = await _bannerService.GetAll();;
 
-            homeViewModel.storeModels = _storeService.GetAll();
+            homeViewModel.storeModels = await _storeService.GetAll();
 
-            homeViewModel.productModels = _productService.GetAll();
+            homeViewModel.productModels = await _productService.GetAll();
 
-            homeViewModel._categories = _categoryService.GetAll();
-            
             return View(homeViewModel);
         }
 

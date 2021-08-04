@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using MWG_BlueSport.ModelDTO;
 using MWG_BlueSport.Models;
 using MWG_BlueSport.Service.Client;
@@ -16,9 +17,9 @@ namespace MWG_BlueSport.Service.Category
             _apiName = "category";
             _clientService = clientService;
         }
-        public List<CategoryModel> GetAll()
+        public async Task<List<CategoryModel>> GetAll()
         {
-            var response = _clientService.Get(_apiName);
+            var response = await _clientService.Get(_apiName);
 
             var dataDto = Newtonsoft.Json.JsonConvert.DeserializeObject<List<CategoryDTO>>(response.Content);
 
@@ -60,8 +61,6 @@ namespace MWG_BlueSport.Service.Category
                 }
                 
             }
-
-
 
             return categoryModels;
         }
