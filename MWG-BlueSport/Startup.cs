@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using MWG_BlueSport.Middlewares;
 using MWG_BlueSport.Models;
 using MWG_BlueSport.Service.Banner;
 using MWG_BlueSport.Service.Category;
@@ -59,6 +60,8 @@ namespace MWG_BlueSport
             app.UseRouting();
 
             app.UseAuthorization();
+
+            app.UseMiddleware<SimpleMiddleware>();
 
             app.UseEndpoints(endpoints =>
             {
