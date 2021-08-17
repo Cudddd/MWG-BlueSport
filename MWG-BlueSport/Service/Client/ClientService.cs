@@ -9,7 +9,6 @@ namespace MWG_BlueSport.Service.Client
     public class ClientService : IClientService
     {
         private string _url;
-        private string _basePath;
 
         public ClientService()
         {
@@ -19,14 +18,12 @@ namespace MWG_BlueSport.Service.Client
                 .Build();
             
             var url = configuration.GetSection("BaseUrl").Value;
-            var basePath = configuration.GetSection("BasePath").Value;
 
             _url = url;
-            _basePath = basePath;
         }
         public async Task<IRestResponse> Get(string path)
         {
-            var client = new RestClient(_url + _basePath + path);
+            var client = new RestClient(_url + path);
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
             var response = await client.ExecuteAsync(request);

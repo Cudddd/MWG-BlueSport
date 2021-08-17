@@ -45,3 +45,6 @@
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/MWG-BlueSport.genruntimeconfig.cache
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Product/Detail.cshtml.g.cs
 /Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Store/Detail.cshtml.g.cs
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Shared/Components/Header/Default.cshtml.g.cs
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Shared/Components/Product/BlueBackground.cshtml.g.cs
+/Users/minhduc/Desktop/MWG-BlueSport/MWG-BlueSport/obj/Release/net5.0/Razor/Views/Shared/Components/Product/WhiteBackground.cshtml.g.cs
